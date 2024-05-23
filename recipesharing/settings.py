@@ -68,6 +68,7 @@ CORS_ALLOW_ALL_ORIGINS=True
 CSRF_TRUSTED_ORIGINS = [
     'http://127.0.0.1:5500',
     'http://127.0.0.1:8000/',
+    "https://recipesharingbackend-dpiy.onrender.com/",
 ]
 
 FRONTEND_LOGIN_URL = "https://664e2d6282a7a503602c694e--rococo-stroopwafel-ab333d.netlify.app/login"
