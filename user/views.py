@@ -17,6 +17,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authtoken.models import Token
+from django.http import JsonResponse
 
 
 
@@ -87,8 +88,9 @@ class UserLogin(APIView):
     
 class UserLogoutView(APIView):
     # permission_classes = [IsAuthenticated]
-    def get(self,request):
+    def get(self, request):
         request.user.auth_token.delete()
         logout(request)
-        return HttpResponseRedirect(settings.FRONTEND_LOGOUT_URL)
-        # return HttpResponseRedirect(settings.FRONTEND_LOGIN_URL)
+        
+        return JsonResponse({'message': 'Logged out successfully'}, status=200)
+        
