@@ -71,9 +71,9 @@ CSRF_TRUSTED_ORIGINS = [
     "https://recipesharingbackend-dpiy.onrender.com/",
 ]
 
-FRONTEND_LOGIN_URL = "https://664f381d15054500a7f18821--endearing-figolla-ddde08.netlify.app/login"
+FRONTEND_LOGIN_URL = "https://664f4ea4e9e9140096111438--cerulean-mooncake-0dc69c.netlify.app/login"
 
-FRONTEND_LOGOUT_URL = "https://664f381d15054500a7f18821--endearing-figolla-ddde08.netlify.app/"
+FRONTEND_LOGOUT_URL = "https://664f4ea4e9e9140096111438--cerulean-mooncake-0dc69c.netlify.app/"
 
 TEMPLATES = [
     {
